@@ -1,0 +1,153 @@
+body{
+    background-image: url('back.gif');
+}
+.container{
+    margin: auto;
+    padding: auto;
+    width: 1050px;
+    height: 680px;
+    border: 5px springgreen groove;
+    border-radius: 30px;
+    background-color: turquoise;
+}
+.header{
+    border: 2px yellow outset;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: lightcoral;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    //-ms-transform: skew(30deg,20deg);
+    //-ms-transform: rotate(30deg);
+    -ms-animation: myHeader 25s;
+    animation: myHeader 25s;
+}
+@keyframes myHeader {
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    100% {background: green;}
+}
+
+#CalImage{
+    float: left;
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+    border-radius: 20px;
+}
+#headerTitle{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+    line-height: 40px;
+    -ms-transform: skew(30deg,0deg);
+    -ms-animation: myHeaderTitle 25s;
+    animation: myHeaderTitle 25s;
+}
+@keyframes myHeaderTitle {
+    0%   {color: green;}
+    25%  {color: black;}
+    50%  {color: red;}
+    100% {color: yellow;}
+}
+.section{
+    //border: 2px white inset;
+    padding: 10px;
+    overflow: auto;
+}
+.menu{
+    background-color: silver;
+    float: left;
+    border: 5px ridge yellow;
+    padding: 10px;
+    margin-top: 50px;
+    width: 150px;
+    height: 250px;
+    border-radius: 50px;
+}
+.menu li{
+    margin-top: 20px;
+    list-style: square;
+}
+.menu li a{
+    color: gold;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#top{
+    overflow: auto;
+    //border: 2px red solid;
+    padding: 10px;
+    height: 450px;
+    margin-left: 150px;
+    text-align: center;
+}
+
+.footer{
+    clear: left;
+    //border: 2px red solid;
+    text-align: right;
+    background-color: lightsalmon;
+    border-radius: 30px;
+    padding-right: 50px; 
+}
+
+#ac{
+    cursor: pointer;
+}
+table{
+    margin-left: 5%;
+}
+#data{
+    margin-left: 12%;
+    width: 400px;
+}
+.even{
+    background-color: darkcyan;
+}
+.odd{
+    background-color: wheat;
+}
+
+.tbl{
+    width: 90%;
+    border: 2px ridge cadetblue;
+    border-radius: 20px;
+    background-color: white;
+}
+.tblInput{
+    width: 90%;
+    border: 2px ridge cadetblue;
+    border-radius: 20px;
+    background-color: white;
+    //margin-top: 50px;
+}
+
+.btn{
+    border: 2px ridge cadetblue;
+    border-radius: 20px;
+    background-color: yellowgreen;
+    color: cyan;
+    font-weight: bolder;
+}
+input, textarea{
+    border: none;
+    border-bottom: 2px groove burlywood;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.chk{
+    border: none;
+    text-align: center;
+}
+
+.lbl{
+    border: 2px groove burlywood;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: cornsilk;
+}

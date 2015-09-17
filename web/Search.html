@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>:: Gopu AddressBook</title>
+        <link rel="stylesheet" href="styles/styleFramework.css"/>
+
+        <link rel="stylesheet" href="styles/jquery.autocomplete.css"/>
+        <script type="text/javascript" src="styles/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="styles/jquery.autocomplete.js"></script>	
+        <script>
+            jQuery(function () {
+                $("#sName").autocomplete("SearchJSP.jsp");
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <img src="styles/Gopu.jpg" alt="" id="CalImage" />
+                <h1 id="headerTitle">Gopu's Online AddressBook</h1>
+            </div>
+
+            <div class="section">
+                <div class="menu">
+                    <ul>
+                        <li><a href="Intro.html">Home</a></li>
+                        <li><a href="Save.html">New Contact</a></li>
+                        <li><a href="Search.html">Search Contact</a></li>
+                        <li><a href="ListAction">List Contacts</a></li>
+                    </ul>
+                </div>
+                <div id="top">
+                    <form method="POST" action="ShowAction">
+                        <table class="tblInput" cellspacing="10" cellpadding="5">
+                            <tr>
+                                <td width=80%>
+                                    <table class="tblInput" cellspacing="10" cellpadding="5">
+                                        <tr bgcolor="lightgrey">
+                                            <th colspan="2">Search Existing Contact</th>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">Contact Name : </td>
+                                            <td><input type="text" id="sName" name="name" size="32" class="input_text" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><hr style="border-color: red;" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" align="center"><input type="submit" class="btn" value="Search Contact" /></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td><img style="border-radius: 200px;" width='230' height='230' src="styles/Sample.jpg" alt="" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer">
+                @copyright
+                <br/>
+                Developed By Gopal Pandey
+            </div>
+
+        </div>
+    </body>
+</html>
